@@ -9,6 +9,7 @@
 import Foundation
 import Kanna
 
+// Возвращает весь HTML указанной страницы
 func getHTMLByURL(URLAdress: String) -> String {
     
    // let myURLAdress = "https://www.kinopoisk.ru/film/9028/" // Случайно выбранный фильм
@@ -21,4 +22,15 @@ func getHTMLByURL(URLAdress: String) -> String {
     }
     
     return myHTMLString
+}
+
+// Получение имени по строке с html
+func getNameFromHTML(HTMLString: String) -> String {
+    var name = ""
+    if let doc = HTML(html: HTMLString, encoding: .windowsCP1251) {
+        for link in doc.xpath("//h1[@itemprop='name']") {
+            name = link.text!
+        }
+    }
+    return name
 }
