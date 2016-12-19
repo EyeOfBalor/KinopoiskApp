@@ -1,0 +1,419 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		834693191E0828EB00161A44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834693181E0828EB00161A44 /* AppDelegate.swift */; };
+		8346931B1E0828EB00161A44 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8346931A1E0828EB00161A44 /* ViewController.swift */; };
+		8346931E1E0828EB00161A44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8346931C1E0828EB00161A44 /* Main.storyboard */; };
+		834693201E0828EB00161A44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8346931F1E0828EB00161A44 /* Assets.xcassets */; };
+		834693231E0828EB00161A44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834693211E0828EB00161A44 /* LaunchScreen.storyboard */; };
+		8346932E1E0828EB00161A44 /* KinopoiskApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8346932D1E0828EB00161A44 /* KinopoiskApplicationTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8346932A1E0828EB00161A44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8346930D1E0828EB00161A44 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 834693141E0828EB00161A44;
+			remoteInfo = KinopoiskApplication;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		834693151E0828EB00161A44 /* KinopoiskApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KinopoiskApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		834693181E0828EB00161A44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8346931A1E0828EB00161A44 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8346931D1E0828EB00161A44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8346931F1E0828EB00161A44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		834693221E0828EB00161A44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		834693241E0828EB00161A44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		834693291E0828EB00161A44 /* KinopoiskApplicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KinopoiskApplicationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8346932D1E0828EB00161A44 /* KinopoiskApplicationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KinopoiskApplicationTests.swift; sourceTree = "<group>"; };
+		8346932F1E0828EB00161A44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		834693121E0828EB00161A44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		834693261E0828EB00161A44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8346930C1E0828EB00161A44 = {
+			isa = PBXGroup;
+			children = (
+				834693171E0828EB00161A44 /* KinopoiskApplication */,
+				8346932C1E0828EB00161A44 /* KinopoiskApplicationTests */,
+				834693161E0828EB00161A44 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		834693161E0828EB00161A44 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				834693151E0828EB00161A44 /* KinopoiskApplication.app */,
+				834693291E0828EB00161A44 /* KinopoiskApplicationTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		834693171E0828EB00161A44 /* KinopoiskApplication */ = {
+			isa = PBXGroup;
+			children = (
+				834693181E0828EB00161A44 /* AppDelegate.swift */,
+				8346931A1E0828EB00161A44 /* ViewController.swift */,
+				8346931C1E0828EB00161A44 /* Main.storyboard */,
+				8346931F1E0828EB00161A44 /* Assets.xcassets */,
+				834693211E0828EB00161A44 /* LaunchScreen.storyboard */,
+				834693241E0828EB00161A44 /* Info.plist */,
+			);
+			path = KinopoiskApplication;
+			sourceTree = "<group>";
+		};
+		8346932C1E0828EB00161A44 /* KinopoiskApplicationTests */ = {
+			isa = PBXGroup;
+			children = (
+				8346932D1E0828EB00161A44 /* KinopoiskApplicationTests.swift */,
+				8346932F1E0828EB00161A44 /* Info.plist */,
+			);
+			path = KinopoiskApplicationTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		834693141E0828EB00161A44 /* KinopoiskApplication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 834693321E0828EB00161A44 /* Build configuration list for PBXNativeTarget "KinopoiskApplication" */;
+			buildPhases = (
+				834693111E0828EB00161A44 /* Sources */,
+				834693121E0828EB00161A44 /* Frameworks */,
+				834693131E0828EB00161A44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KinopoiskApplication;
+			productName = KinopoiskApplication;
+			productReference = 834693151E0828EB00161A44 /* KinopoiskApplication.app */;
+			productType = "com.apple.product-type.application";
+		};
+		834693281E0828EB00161A44 /* KinopoiskApplicationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 834693351E0828EB00161A44 /* Build configuration list for PBXNativeTarget "KinopoiskApplicationTests" */;
+			buildPhases = (
+				834693251E0828EB00161A44 /* Sources */,
+				834693261E0828EB00161A44 /* Frameworks */,
+				834693271E0828EB00161A44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8346932B1E0828EB00161A44 /* PBXTargetDependency */,
+			);
+			name = KinopoiskApplicationTests;
+			productName = KinopoiskApplicationTests;
+			productReference = 834693291E0828EB00161A44 /* KinopoiskApplicationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8346930D1E0828EB00161A44 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Not exist";
+				TargetAttributes = {
+					834693141E0828EB00161A44 = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+					};
+					834693281E0828EB00161A44 = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 834693141E0828EB00161A44;
+					};
+				};
+			};
+			buildConfigurationList = 834693101E0828EB00161A44 /* Build configuration list for PBXProject "KinopoiskApplication" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8346930C1E0828EB00161A44;
+			productRefGroup = 834693161E0828EB00161A44 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				834693141E0828EB00161A44 /* KinopoiskApplication */,
+				834693281E0828EB00161A44 /* KinopoiskApplicationTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		834693131E0828EB00161A44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				834693231E0828EB00161A44 /* LaunchScreen.storyboard in Resources */,
+				834693201E0828EB00161A44 /* Assets.xcassets in Resources */,
+				8346931E1E0828EB00161A44 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		834693271E0828EB00161A44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		834693111E0828EB00161A44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8346931B1E0828EB00161A44 /* ViewController.swift in Sources */,
+				834693191E0828EB00161A44 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		834693251E0828EB00161A44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8346932E1E0828EB00161A44 /* KinopoiskApplicationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8346932B1E0828EB00161A44 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 834693141E0828EB00161A44 /* KinopoiskApplication */;
+			targetProxy = 8346932A1E0828EB00161A44 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8346931C1E0828EB00161A44 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8346931D1E0828EB00161A44 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		834693211E0828EB00161A44 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				834693221E0828EB00161A44 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		834693301E0828EB00161A44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		834693311E0828EB00161A44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		834693331E0828EB00161A44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KinopoiskApplication/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kinopoisk-app.KinopoiskApplication";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		834693341E0828EB00161A44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KinopoiskApplication/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kinopoisk-app.KinopoiskApplication";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		834693361E0828EB00161A44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KinopoiskApplicationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kinopoisk-app.KinopoiskApplicationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KinopoiskApplication.app/KinopoiskApplication";
+			};
+			name = Debug;
+		};
+		834693371E0828EB00161A44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KinopoiskApplicationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kinopoisk-app.KinopoiskApplicationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KinopoiskApplication.app/KinopoiskApplication";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		834693101E0828EB00161A44 /* Build configuration list for PBXProject "KinopoiskApplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				834693301E0828EB00161A44 /* Debug */,
+				834693311E0828EB00161A44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		834693321E0828EB00161A44 /* Build configuration list for PBXNativeTarget "KinopoiskApplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				834693331E0828EB00161A44 /* Debug */,
+				834693341E0828EB00161A44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		834693351E0828EB00161A44 /* Build configuration list for PBXNativeTarget "KinopoiskApplicationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				834693361E0828EB00161A44 /* Debug */,
+				834693371E0828EB00161A44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8346930D1E0828EB00161A44 /* Project object */;
+}
