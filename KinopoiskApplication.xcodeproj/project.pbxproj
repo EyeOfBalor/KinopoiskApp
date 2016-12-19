@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09E56EC7D035B8425FC6B9B8 /* Pods_KinopoiskApplication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8B9E3CA843CC1489E94B807 /* Pods_KinopoiskApplication.framework */; };
 		834693191E0828EB00161A44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834693181E0828EB00161A44 /* AppDelegate.swift */; };
 		8346931B1E0828EB00161A44 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8346931A1E0828EB00161A44 /* ViewController.swift */; };
 		8346931E1E0828EB00161A44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8346931C1E0828EB00161A44 /* Main.storyboard */; };
 		834693201E0828EB00161A44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8346931F1E0828EB00161A44 /* Assets.xcassets */; };
 		834693231E0828EB00161A44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834693211E0828EB00161A44 /* LaunchScreen.storyboard */; };
 		8346932E1E0828EB00161A44 /* KinopoiskApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8346932D1E0828EB00161A44 /* KinopoiskApplicationTests.swift */; };
+		834693391E08333300161A44 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 834693381E08333300161A44 /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		542B8F581FB4630416BBDAF1 /* Pods-KinopoiskApplication.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KinopoiskApplication.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KinopoiskApplication/Pods-KinopoiskApplication.debug.xcconfig"; sourceTree = "<group>"; };
+		57454D6B340D08676AA62A18 /* Pods-KinopoiskApplication.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KinopoiskApplication.release.xcconfig"; path = "Pods/Target Support Files/Pods-KinopoiskApplication/Pods-KinopoiskApplication.release.xcconfig"; sourceTree = "<group>"; };
 		834693151E0828EB00161A44 /* KinopoiskApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KinopoiskApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		834693181E0828EB00161A44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8346931A1E0828EB00161A44 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +40,8 @@
 		834693291E0828EB00161A44 /* KinopoiskApplicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KinopoiskApplicationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8346932D1E0828EB00161A44 /* KinopoiskApplicationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KinopoiskApplicationTests.swift; sourceTree = "<group>"; };
 		8346932F1E0828EB00161A44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		834693381E08333300161A44 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		E8B9E3CA843CC1489E94B807 /* Pods_KinopoiskApplication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KinopoiskApplication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09E56EC7D035B8425FC6B9B8 /* Pods_KinopoiskApplication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,9 +66,12 @@
 		8346930C1E0828EB00161A44 = {
 			isa = PBXGroup;
 			children = (
+				834693381E08333300161A44 /* Podfile */,
 				834693171E0828EB00161A44 /* KinopoiskApplication */,
 				8346932C1E0828EB00161A44 /* KinopoiskApplicationTests */,
 				834693161E0828EB00161A44 /* Products */,
+				94238E0023081182E6CF4CBB /* Pods */,
+				CC6DC95493413FA98CC11DE5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +106,23 @@
 			path = KinopoiskApplicationTests;
 			sourceTree = "<group>";
 		};
+		94238E0023081182E6CF4CBB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				542B8F581FB4630416BBDAF1 /* Pods-KinopoiskApplication.debug.xcconfig */,
+				57454D6B340D08676AA62A18 /* Pods-KinopoiskApplication.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CC6DC95493413FA98CC11DE5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E8B9E3CA843CC1489E94B807 /* Pods_KinopoiskApplication.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +130,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 834693321E0828EB00161A44 /* Build configuration list for PBXNativeTarget "KinopoiskApplication" */;
 			buildPhases = (
+				3F576C0007BF8550B69361A3 /* [CP] Check Pods Manifest.lock */,
 				834693111E0828EB00161A44 /* Sources */,
 				834693121E0828EB00161A44 /* Frameworks */,
 				834693131E0828EB00161A44 /* Resources */,
+				FCE102698AD27ADF9167269B /* [CP] Embed Pods Frameworks */,
+				7CD9D642DB55475C6F8CA2DB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -181,6 +211,7 @@
 			files = (
 				834693231E0828EB00161A44 /* LaunchScreen.storyboard in Resources */,
 				834693201E0828EB00161A44 /* Assets.xcassets in Resources */,
+				834693391E08333300161A44 /* Podfile in Resources */,
 				8346931E1E0828EB00161A44 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -193,6 +224,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3F576C0007BF8550B69361A3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7CD9D642DB55475C6F8CA2DB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KinopoiskApplication/Pods-KinopoiskApplication-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCE102698AD27ADF9167269B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KinopoiskApplication/Pods-KinopoiskApplication-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		834693111E0828EB00161A44 /* Sources */ = {
@@ -335,6 +414,7 @@
 		};
 		834693331E0828EB00161A44 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 542B8F581FB4630416BBDAF1 /* Pods-KinopoiskApplication.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KinopoiskApplication/Info.plist;
@@ -348,6 +428,7 @@
 		};
 		834693341E0828EB00161A44 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57454D6B340D08676AA62A18 /* Pods-KinopoiskApplication.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KinopoiskApplication/Info.plist;
