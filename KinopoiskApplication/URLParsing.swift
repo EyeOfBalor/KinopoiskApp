@@ -9,38 +9,16 @@
 import Foundation
 import Kanna
 
-func displayURL(){
-    let myURLAdress = "https://www.kinopoisk.ru/film/9028/" // Случайно выбранный фильм
-    let myURL = URL(string: myURLAdress)
-    let URLTask = URLSession.shared.dataTask(with: myURL!, completionHandler: {
-        myData, response, error in
-        
-        guard error == nil else {return}
-        
-        let myHTMLString = String(data: myData!, encoding: String.Encoding.windowsCP1251) //
-        
-        
-        if let doc = HTML(html: myHTMLString!, encoding: .windowsCP1251) {
-            
-            // Search for nodes by XPath
-            for link in doc.xpath("//h1[@itemprop='name']") {
-                print(link.text)
-                //print(link["href"])
-            }
-            for link in doc.xpath("//li[@itemprop='actors']") {
-                print(link.text)
-                //print(link["href"])
-            }
-            for link in doc.xpath("//div[@itemprop='description']") {
-                print(link.text)
-                //print(link["href"])
-            }
-            for link in doc.xpath("//div/a/img[@itemprop='image']/@src") {
-                print(link.text)
-                //print(link["href"])
-            }
-        }
-    })
-    URLTask.resume()
+func getHTMLByURL(URLAdress: String) -> String {
     
+   // let myURLAdress = "https://www.kinopoisk.ru/film/9028/" // Случайно выбранный фильм
+    let myURL = URL(string: URLAdress)!
+    var myHTMLString = ""
+    do{
+        myHTMLString = try String(contentsOf: myURL, encoding: String.Encoding.windowsCP1251) // Перевод считанной страницы в String
+    } catch let error {
+    print("Error: \(error)")
+    }
+    
+    return myHTMLString
 }
