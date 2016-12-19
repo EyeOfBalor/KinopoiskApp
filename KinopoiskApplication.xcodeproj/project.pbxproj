@@ -15,6 +15,7 @@
 		834693231E0828EB00161A44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834693211E0828EB00161A44 /* LaunchScreen.storyboard */; };
 		8346932E1E0828EB00161A44 /* KinopoiskApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8346932D1E0828EB00161A44 /* KinopoiskApplicationTests.swift */; };
 		834693391E08333300161A44 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 834693381E08333300161A44 /* Podfile */; };
+		F412796A1E084368003DCC67 /* URLParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41279691E084368003DCC67 /* URLParsing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +41,9 @@
 		834693291E0828EB00161A44 /* KinopoiskApplicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KinopoiskApplicationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8346932D1E0828EB00161A44 /* KinopoiskApplicationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KinopoiskApplicationTests.swift; sourceTree = "<group>"; };
 		8346932F1E0828EB00161A44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		834693381E08333300161A44 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		834693381E08333300161A44 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E8B9E3CA843CC1489E94B807 /* Pods_KinopoiskApplication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KinopoiskApplication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F41279691E084368003DCC67 /* URLParsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLParsing.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				8346931F1E0828EB00161A44 /* Assets.xcassets */,
 				834693211E0828EB00161A44 /* LaunchScreen.storyboard */,
 				834693241E0828EB00161A44 /* Info.plist */,
+				F41279691E084368003DCC67 /* URLParsing.swift */,
 			);
 			path = KinopoiskApplication;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8346931B1E0828EB00161A44 /* ViewController.swift in Sources */,
+				F412796A1E084368003DCC67 /* URLParsing.swift in Sources */,
 				834693191E0828EB00161A44 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
