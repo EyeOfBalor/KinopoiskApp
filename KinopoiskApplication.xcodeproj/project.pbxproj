@@ -338,6 +338,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KinopoiskApplication/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kinopoisk-app.KinopoiskApplication";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -350,6 +351,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KinopoiskApplication/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kinopoisk-app.KinopoiskApplication";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -404,6 +406,7 @@
 				834693341E0828EB00161A44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		834693351E0828EB00161A44 /* Build configuration list for PBXNativeTarget "KinopoiskApplicationTests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +415,7 @@
 				834693371E0828EB00161A44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
