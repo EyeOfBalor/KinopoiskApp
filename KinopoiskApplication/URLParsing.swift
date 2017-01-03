@@ -24,13 +24,31 @@ func getHTMLByURL(URLAdress: String) -> String {
     return myHTMLString
 }
 
-// Получение имени по строке с html
-func getNameFromHTML(HTMLString: String) -> String {
-    var name = ""
+func getAllInfoAboutFilm(FilmURLAdress: String) -> (String,String,String,[String]){
+    let HTMLString = getHTMLByURL(URLAdress: FilmURLAdress) // Получение html контента страницы
+    
+    var name = "" // Переменная для названия фильма
+    var description = "" // Переменная для названия фильма
+    var imageURL = "" // Переменная для ссылки на изображение
+    var actors: [String] = [] // Переменная для названия фильма
+    
+    
     if let doc = HTML(html: HTMLString, encoding: .windowsCP1251) {
+        
         for link in doc.xpath("//h1[@itemprop='name']") {
             name = link.text!
         }
+        for link in doc.xpath("//div[@itemprop='description']") {
+            description = link.text!
+        }
+        for link in doc.xpath("//div/a/img[@itemprop='image']/@src") {
+            imageURL = link.text!
+        }
+        for link in doc.xpath("//li[@itemprop='actors']") {
+            actors.append(link.text!)
+        }
     }
-    return name
+    
+    return (name,description,imageURL,actors)
 }
+
