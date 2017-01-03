@@ -24,7 +24,7 @@ func getHTMLByURL(URLAdress: String) -> String {
     return myHTMLString
 }
 
-func getAllInfoAboutFilm(FilmURLAdress: String) -> (String,String,String,[String]){
+func getAllInfoAboutFilm(FilmURLAdress: String) -> (name: String,description: String,imageURL: String,actors: [String]){
     let HTMLString = getHTMLByURL(URLAdress: FilmURLAdress) // Получение html контента страницы
     
     var name = "" // Переменная для названия фильма
@@ -51,4 +51,3 @@ func getAllInfoAboutFilm(FilmURLAdress: String) -> (String,String,String,[String
     
     return (name,description,imageURL,actors)
 }
-
