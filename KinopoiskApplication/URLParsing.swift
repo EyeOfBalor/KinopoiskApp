@@ -24,6 +24,7 @@ func getHTMLByURL(URLAdress: String) -> String {
     return myHTMLString
 }
 
+// Получение всей информации о фильме
 func getAllInfoAboutFilm(FilmURLAdress: String) -> (name: String,description: String,imageURL: String,actors: [String]){
     let HTMLString = getHTMLByURL(URLAdress: FilmURLAdress) // Получение html контента страницы
     
@@ -50,4 +51,22 @@ func getAllInfoAboutFilm(FilmURLAdress: String) -> (name: String,description: St
     }
     
     return (name,description,imageURL,actors)
+}
+
+// Получение списка из названий жанров и ссылок на них
+func getAllGenres() -> [(name: String,URL: String)]{
+    let HTMLString = getHTMLByURL(URLAdress: "https://www.kinopoisk.ru/afisha/new/") // Страница с поиском по фильмам в прокате
+    
+    var genresNameAndURL: [(String,String)] = []
+    var tempGenre : (name: String,URL: String)
+    
+    if let doc = HTML(html: HTMLString, encoding: .windowsCP1251){
+        for link in doc.xpath("//div[@class='genresNav']/table/tr/td/ul/li/a/@href"){
+            tempGenre.URL = link.text!
+            tempGenre.name = (link.parent?.text)!
+            genresNameAndURL.append(tempGenre)
+        }
+    }
+    
+    return genresNameAndURL
 }
