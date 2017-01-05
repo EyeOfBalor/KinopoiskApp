@@ -75,7 +75,7 @@ func getAllGenres(navigatorURL: String) -> [(name: String,URL: String)]{
 extension String{
     
     // Возвращает список всех совпадений с паттерном в строке
-    func matches(for regex: String) -> [String] {
+    func matches(pattern regex: String) -> [String] {
         
         do {
             let regex = try NSRegularExpression(pattern: regex)
@@ -87,5 +87,29 @@ extension String{
             return []
         }
     }
+    
+    // Возвращает список всех групп записи данного совпадения
+    func captureGroups(for match: NSTextCheckingResult) -> [String] {
+        
+        let NSText = self as NSString
+        var result = [String]()
+        for index in 1..<match.numberOfRanges{
+            result.append(NSText.substring(with: match.rangeAt(index)))
+        }
+        return result
+    }
 }
 
+extension NSTextCheckingResult{
+    
+    // Возвращает список всех групп записи данного совпадения
+    func captureGroups(in text: String) -> [String] {
+        
+        let NSText = text as NSString
+        var result = [String]()
+        for index in 1..<self.numberOfRanges{
+            result.append(NSText.substring(with: self.rangeAt(index)))
+        }
+        return result
+    }
+}
