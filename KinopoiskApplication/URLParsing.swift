@@ -54,8 +54,8 @@ func getAllInfoAboutFilm(FilmURLAdress: String) -> (name: String,description: St
 }
 
 // Получение списка из названий жанров и ссылок на них
-func getAllGenres() -> [(name: String,URL: String)]{
-    let HTMLString = getHTMLByURL(URLAdress: "https://www.kinopoisk.ru/afisha/new/") // Страница с поиском по фильмам в прокате
+func getAllGenres(navigatorURL: String) -> [(name: String,URL: String)]{
+    let HTMLString = getHTMLByURL(URLAdress: navigatorURL) // Страница с поиском по фильмам в прокате
     
     var genresNameAndURL: [(String,String)] = []
     var tempGenre : (name: String,URL: String)
@@ -70,3 +70,22 @@ func getAllGenres() -> [(name: String,URL: String)]{
     
     return genresNameAndURL
 }
+
+// Расширение для String для упрощения работы с регулярными выражениями
+extension String{
+    
+    // Возвращает список всех совпадений с паттерном в строке
+    func matches(for regex: String) -> [String] {
+        
+        do {
+            let regex = try NSRegularExpression(pattern: regex)
+            let nsString = self as NSString
+            let results = regex.matches(in: self, range: NSRange(location: 0, length: nsString.length))
+            return results.map { nsString.substring(with: $0.range)}
+        } catch let error {
+            print("invalid regex: \(error.localizedDescription)")
+            return []
+        }
+    }
+}
+
