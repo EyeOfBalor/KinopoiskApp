@@ -71,6 +71,13 @@ func getAllGenres(navigatorURL: String) -> [(name: String,URL: String)]{
     return genresNameAndURL
 }
 
+// Переводит шестнадцатиричный код в соответствующий символ
+func hexToChar(hex: String) -> String{
+    let number = Int(hex, radix: 16)
+    let scalarValue = UnicodeScalar(number!)
+    return String(describing: scalarValue!)
+}
+
 // Расширение для String для упрощения работы с регулярными выражениями
 extension String{
     
