@@ -53,6 +53,25 @@ func getAllInfoAboutFilm(FilmURLAdress: String) -> (name: String,description: St
     return (name,description,imageURL,actors)
 }
 
+// Получения списка всех городов
+func getCities() -> [String]{
+    let HTMLString = getHTMLByURL(URLAdress: "https://www.kinopoisk.ru/afisha/new/")
+    
+    let findCities = try! NSRegularExpression(pattern: "\\{\"name\":\"([^\"]+)\"")
+    
+    let cityMatches = findCities.matches(in: HTMLString, options: [], range: NSMakeRange(0, (HTMLString as NSString).length))
+    var cityNames = [String]()
+    for match in cityMatches{
+        let nameCapture = HTMLString.captureGroups(for: match).first!
+        cityNames.append(nameCapture)
+        //print(nameCapture)
+        
+        //print(decodeUTF8(text: nameCapture))
+        
+    }
+    return cityNames
+}
+
 // Получение списка из названий жанров и ссылок на них
 func getAllGenres(navigatorURL: String) -> [(name: String,URL: String)]{
     let HTMLString = getHTMLByURL(URLAdress: navigatorURL) // Страница с поиском по фильмам в прокате
@@ -76,6 +95,18 @@ func hexToChar(hex: String) -> String{
     let number = Int(hex, radix: 16)
     let scalarValue = UnicodeScalar(number!)
     return String(describing: scalarValue!)
+}
+
+// Переводит закодированный текст в кириллицу
+func decodeUTF8(text: String) -> String{
+    let regex = try! NSRegularExpression(pattern: "u([^\\\\]+)")
+    let matches = regex.matches(in: text, range: NSMakeRange(0, (text as NSString).length))
+    var result = ""
+    for match in matches{
+        let nameGroup = match.captureGroups(in: text).first!
+        result += hexToChar(hex: nameGroup)
+    }
+    return result
 }
 
 // Расширение для String для упрощения работы с регулярными выражениями
