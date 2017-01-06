@@ -63,11 +63,7 @@ func getCities() -> [String]{
     var cityNames = [String]()
     for match in cityMatches{
         let nameCapture = HTMLString.captureGroups(for: match).first!
-        cityNames.append(nameCapture)
-        //print(nameCapture)
-        
-        //print(decodeUTF8(text: nameCapture))
-        
+        cityNames.append(decodeUTF8(text: nameCapture))
     }
     return cityNames
 }
@@ -99,7 +95,7 @@ func hexToChar(hex: String) -> String{
 
 // Переводит закодированный текст в кириллицу
 func decodeUTF8(text: String) -> String{
-    let regex = try! NSRegularExpression(pattern: "u([^\\\\]+)")
+    let regex = try! NSRegularExpression(pattern: "u([a-f0-9]+)")
     let matches = regex.matches(in: text, range: NSMakeRange(0, (text as NSString).length))
     var result = ""
     for match in matches{
