@@ -81,6 +81,23 @@ func getCities() -> [(name: String, region: String, link: String)]{
     return citiesInfo
 }
 
+// Вывод всех вариантов сортировки с ссылками по URL
+func getSorts(navigatorURL: String) -> [(name: String,URL: String)]{
+    let HTMLString = getHTMLByURL(URLAdress: navigatorURL) // Страница с поиском по фильмам в прокате
+    
+    var sortNameAndURL: [(String,String)] = []
+    var tempSort: (name: String,URL: String)
+    
+    if let doc = HTML(html: HTMLString, encoding: .windowsCP1251){
+        for link in doc.xpath("//td/small/a/@href"){
+            tempSort.URL = link.text!
+            tempSort.name = (link.parent?.text)!
+            sortNameAndURL.append(tempSort)
+        }
+    }
+    return sortNameAndURL
+}
+
 // Получение списка из названий жанров и ссылок на них
 func getAllGenres(navigatorURL: String) -> [(name: String,URL: String)]{
     let HTMLString = getHTMLByURL(URLAdress: navigatorURL) // Страница с поиском по фильмам в прокате
