@@ -1,26 +1,70 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ACo-iJ-ioN">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Navigation Controller-->
+        <scene sceneID="Hme-TL-2fI">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController id="ACo-iJ-ioN" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="N8V-FD-3vJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="XaE-Fu-OgX" kind="relationship" relationship="rootViewController" id="Ll9-f7-mDK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TSU-yb-SqK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-54" y="265"/>
+        </scene>
+        <!--Популярное сейчас-->
+        <scene sceneID="uWd-gj-KZQ">
+            <objects>
+                <viewController id="XaE-Fu-OgX" customClass="StartScreen" customModule="KinopoiskApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="eRu-dg-78Z"/>
+                        <viewControllerLayoutGuide type="bottom" id="Gex-DQ-KUH"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="efO-bZ-F2T">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="yyn-AM-CSB">
+                                <rect key="frame" x="20" y="84" width="335" height="563"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="yyn-AM-CSB" secondAttribute="trailing" constant="20" id="A6o-xd-yT8"/>
+                            <constraint firstItem="yyn-AM-CSB" firstAttribute="leading" secondItem="efO-bZ-F2T" secondAttribute="leading" constant="20" id="Dkr-4B-mlS"/>
+                            <constraint firstItem="yyn-AM-CSB" firstAttribute="top" secondItem="eRu-dg-78Z" secondAttribute="bottom" constant="20" id="DxK-0e-owt"/>
+                            <constraint firstItem="Gex-DQ-KUH" firstAttribute="top" secondItem="yyn-AM-CSB" secondAttribute="bottom" constant="20" id="pyf-kU-esK"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Популярное сейчас" id="meu-1C-9sX"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="vSZ-S6-Ze3" id="ngJ-77-BUq"/>
+                        <outlet property="stackView" destination="yyn-AM-CSB" id="s3d-LM-4iz"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LhJ-Ze-hcx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="vSZ-S6-Ze3">
+                    <connections>
+                        <outlet property="delegate" destination="XaE-Fu-OgX" id="NGT-RV-7tU"/>
+                        <outlet property="searchContentsController" destination="XaE-Fu-OgX" id="vgi-Qy-z2R"/>
+                        <outlet property="searchResultsDataSource" destination="XaE-Fu-OgX" id="XQ8-dF-Hfu"/>
+                        <outlet property="searchResultsDelegate" destination="XaE-Fu-OgX" id="lZS-oD-NlR"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
+            <point key="canvasLocation" x="652" y="265"/>
         </scene>
     </scenes>
 </document>
