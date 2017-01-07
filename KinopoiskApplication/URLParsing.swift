@@ -54,18 +54,31 @@ func getAllInfoAboutFilm(FilmURLAdress: String) -> (name: String,description: St
 }
 
 // Получения списка всех городов
-func getCities() -> [String]{
+func getCities() -> [(name: String, region: String, link: String)]{
     let HTMLString = getHTMLByURL(URLAdress: "https://www.kinopoisk.ru/afisha/new/")
     
-    let findCities = try! NSRegularExpression(pattern: "\\{\"name\":\"([^\"]+)\"")
+    let findCities = try! NSRegularExpression(pattern: "\\{\"name\":\"([^\"]+)\"(,\"isCapital\":\".\")?,\"region\":\"([0-9]+)\",\"id_city\":\"[0-9]+\",\"link\":\"([^\"]+)\"\\}")
     
     let cityMatches = findCities.matches(in: HTMLString, options: [], range: NSMakeRange(0, (HTMLString as NSString).length))
-    var cityNames = [String]()
+    var citiesInfo = [(name: String, region: String, link: String)]()
+    var tempCity : (name: String, region: String, link: String)
+    
     for match in cityMatches{
-        let nameCapture = HTMLString.captureGroups(for: match).first!
-        cityNames.append(decodeUTF8(text: nameCapture))
+        let captures = HTMLString.captureGroups(for: match)
+        
+        tempCity.name = decodeUTF8(text: captures.first!)
+        
+        if (captures.endIndex == 3){
+            tempCity.region = captures[1]
+            tempCity.link = captures[2]
+        } else{
+            tempCity.region = captures[2]
+            tempCity.link = captures[3]
+        }
+        
+        citiesInfo.append(tempCity)
     }
-    return cityNames
+    return citiesInfo
 }
 
 // Получение списка из названий жанров и ссылок на них
@@ -128,7 +141,10 @@ extension String{
         let NSText = self as NSString
         var result = [String]()
         for index in 1..<match.numberOfRanges{
-            result.append(NSText.substring(with: match.rangeAt(index)))
+            let range = match.rangeAt(index)
+            if (range.length>0 && range.length<100000){ // Заглушка для диапазонов с ошибкой
+                result.append(NSText.substring(with: match.rangeAt(index)))
+            }
         }
         return result
     }
