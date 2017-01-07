@@ -13,8 +13,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let name = getNameFromHTML(HTMLString: getHTMLByURL(URLAdress: "https://www.kinopoisk.ru/film/9028/"))
-        print(name)
+        //let name = getNameFromHTML(HTMLString: getHTMLByURL(URLAdress: "https://www.kinopoisk.ru/film/9028/"))
+        //print(name)
     }
 
 
